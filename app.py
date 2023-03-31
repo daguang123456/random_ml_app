@@ -11,15 +11,15 @@ def generate_random_color():
     return f"rgb({r}, {g}, {b})"
 
 def main():
-    st.title("Random Machine Learning App")
+    st.title("随机数字颜色")
 
-    st.header("Random Number")
+    st.header("随机数字r")
     number = generate_random_number()
-    st.write(f"The generated number is: {number}")
+    st.write(f"得出: {number}")
 
-    st.header("Random Color")
+    st.header("随机颜色")
     color = generate_random_color()
-    st.write(f"The generated color is: {color}")
+    st.write(f"得出: {color}")
     st.markdown(f"<div style='background-color: {color}; width: 50px; height: 50px;'></div>", unsafe_allow_html=True)
 
 if __name__ == "__main__":
